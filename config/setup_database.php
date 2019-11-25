@@ -11,7 +11,7 @@ try {
     // Connect to Mysql server
     $dbh = new PDO("mysql:host=$servername", $username, $password);
     $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $sql = "CREATE DATABASE `" . $dbname . "`";
+    $sql = "CREATE DATABASE IF NOT EXISTS `" . $dbname . "`";
     $dbh->exec($sql);
     echo "Database created successfully <br>";
     echo "<a href='./createTables.php'>Setup Tables</a>";

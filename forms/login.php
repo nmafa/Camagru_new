@@ -4,6 +4,7 @@ session_start();
 include '../functions/login.php';
 
 // retreive values
+
 $mail = htmlspecialchars($_POST['email']);
 $password = htmlspecialchars($_POST['password']);
 

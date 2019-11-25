@@ -59,8 +59,8 @@ h1{
 	border: none;
 	outline: none;
 	height: 40px;
-	background: rgb(170 76 155);
-	color: #fff;
+	background: gb(170 76r 155);
+	color: darkmagenta;
 	font-size: 18px;
 	border-radius: 20px;
 
@@ -155,3 +155,22 @@ h1{
 		
 
 	}
+	.canvas{
+	border-radius: 50px 50px;
+	width: 400px;
+	background-color:rgb(112, 8, 103);
+	margin: auto;
+}
+.booth{
+    width: 340px;
+    background: rgb(112, 8, 103);;
+    border: 10px solid #ddd;
+    margin: 0 auto;
+}
+.SITU{
+	background-color: rgb(112, 8, 103);
+}
+.stickers{
+    width: 80px;
+    height: auto;
+}

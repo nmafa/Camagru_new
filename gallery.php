@@ -1,14 +1,20 @@
 <html>
 
-<h4>Pictures</h4>
-<?php session_start();
-include "./includes/header.php"; ?>
-<br>
+<head>
+    <link rel="stylesheet" type="text/css" href="./css/gallery.css">
+</head>
+
+<body>
+    <h4>Pictures</h4>
+    <?php session_start();
+    include "./includes/header.php"; ?>
+    <br>
 
 </html>
 <?php
 include_once "./functions/like.php";
 include_once "./functions/comment.php";
+include_once "./functions/delete.php";
 
 $servername = "localhost";
 $username = "root";
@@ -38,6 +44,10 @@ try {
             <form action="<?php echo $_SERVER['PHP_SELF'] . "?like=" . $row['id'] . "&userid=" . $row['userid'] ?>" method="POST">
                 <input type="submit" value="like" name='like' />
             </form>
+
+            <form action="<?php echo $_SERVER['PHP_SELF'] . "?delete=" . $row['id'] . "&userid=" . $row['userid'] ?>" method="POST">
+                <input type="submit" value="delete" name='delete' />
+            </form>
 <?php
         }
     }
@@ -45,4 +55,9 @@ try {
     echo "Error: " . $e->getMessage();
 }
 $conn = null;
+
 ?>
+
+</body>
+
+</html>

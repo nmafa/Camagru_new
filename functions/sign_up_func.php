@@ -54,8 +54,8 @@ if (isset($_POST['username']) && isset($_POST['email']) && isset($_POST['passwor
                                 </head>
                                 <body>
                                 Hello ' . htmlspecialchars($username) . ' </br>
-                                To finalyze your subscribtion please click the link
-                                <a href="http://localhost:8080/camagru/forms/verify_form.php?token=' . $token . '">Verify my email</a>
+                                To finalize the last step of your registration please click the link
+                                <a href="http://localhost:8080/nmafa/camagru/forms/verify_form.php?token=' . $token . '">Verify my email</a>
                                 </body>
                             </html>';
 

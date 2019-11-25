@@ -31,7 +31,7 @@ if (isset($_POST['username']) && isset($_POST['email']) && isset($_POST['passwor
     </head>
     <body>
       Hello ' . htmlspecialchars($username) . ' </br>
-      There is your new password :  </br>
+      You have successfully updated your information :  </br>
     </body>
   </html>
   ';
@@ -86,7 +86,7 @@ if (isset($_POST['username']) && isset($_POST['email']) && isset($_POST['passwor
     </head>
     <body>
       Hello ' . htmlspecialchars($username) . ' </br>
-      There is your new password :  </br>
+      Your username has been updated successfully.  </br>
     </body>
   </html>
   ';
@@ -124,7 +124,7 @@ if (isset($_POST['username']) && isset($_POST['email']) && isset($_POST['passwor
     </head>
     <body>
       Hello ' . htmlspecialchars($username) . ' </br>
-      There is your new password :  </br>
+      Your email was successfully updated.  </br>
     </body>
   </html>
   ';
